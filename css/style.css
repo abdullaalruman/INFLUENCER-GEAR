@@ -336,6 +336,36 @@ Media Queries Part Start
     .p_collection{
         grid-template-columns: repeat(1,1fr);
         width: 100%;
+        margin: none;
+    }
+
+    .container_part {
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+    }
+
+    .mobile_box {
+        width: 100%;
+    }
+
+    .borderpart img{
+        display: none;
     }
     
+    nav {
+        display: none;
+    }
+
+    .footer_box {
+        flex-direction: column;
+    }
+}
+
+/* Tablet Devices  */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container_part {
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+    }
 }
